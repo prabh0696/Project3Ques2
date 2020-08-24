@@ -3,7 +3,8 @@ package project.logic.model;
 public class User {
     private String fName;
     // TODO : RQ - 1
-    private int age;
+
+    private Dob dob;
     private String lName;
     private Address address;
     private Double salary;
@@ -16,14 +17,6 @@ public class User {
 
     public void setfName(String fName) {
         this.fName = fName;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
     }
 
     public String getlName() {
@@ -42,6 +35,14 @@ public class User {
         this.address = address;
     }
 
+    public Dob getDob() {
+        return dob;
+    }
+
+    public void setDob(Dob dob) {
+        this.dob = dob;
+    }
+
     public Double getSalary() {
         return salary;
     }
@@ -54,8 +55,8 @@ public class User {
     public String toString() {
         return "User{" +
                 "fName='" + fName + '\'' +
-                ", age=" + age +
                 ", lName='" + lName + '\'' +
+                ", d.o.b=" + dob +
                 ", address=" + address +
                 ", salary=" + salary +
                 '}';
